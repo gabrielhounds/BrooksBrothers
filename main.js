@@ -25,20 +25,15 @@ function init() {
 
 	$('.dot1').css({ backgroundImage : 'url(navDot_active.png)' });
 
-
 	t.set([frame2, frame2, frame3, frame4, frame5], { left : '-100%', opacity : 0 });
 	//t.set([txt1, txt2, txt3, txt4, txt5], { opacity : 0 });
 
 	function handleRightClick(e) {
-
 		$('.dot').css({ backgroundImage : 'url(navDot.png)' });
-
 		console.log( 'RIGHT ' );
 		switch (frameNum) {
 		  case 1:
-
 		  	$('.dot2').css({ backgroundImage : 'url(navDot_active.png)' });
-
 			t.set(frame2, {left:'-100%', opacity : 0});
 		  	t.to(frame1, 0.4, {left:'100%', ease:Power3.easeOut});
 			t.to(frame2, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -46,9 +41,7 @@ function init() {
 		  	frameNum = 2;
 	  	  break;
 	  	  case 2:
-
 	  	  	$('.dot3').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame3, {left:'-100%', opacity : 0});
 		  	t.to(frame2, 0.4, {left:'100%', ease:Power3.easeOut});
 			t.to(frame3, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -57,7 +50,6 @@ function init() {
 	  	  break;
 	  	  case 3:
 	  	  	$('.dot4').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame4, {left:'-100%', opacity : 0});
 		  	t.to(frame3, 0.4, {left:'100%', ease:Power3.easeOut});
 			t.to(frame4, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -65,9 +57,7 @@ function init() {
 	  	  	frameNum = 4;
 	  	  break;
 	  	  case 4:
-
 	  	  	$('.dot5').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame5, {left:'-100%', opacity : 0});
 		  	t.to(frame4, 0.4, {left:'100%', ease:Power3.easeOut});
 			t.to(frame5, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -76,7 +66,6 @@ function init() {
 	  	  break;
 	  	  case 5:
 	  	  	$('.dot1').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame1, {left:'-100%', opacity : 0});
 		  	t.to(frame5, 0.4, {left:'100%', ease:Power3.easeOut});
 			t.to(frame1, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -85,13 +74,13 @@ function init() {
 	  	  break;
 		}
 	}
+
 	function handleLeftClick(e) {
 		console.log( 'LEFT ' );
 		$('.dot').css({ backgroundImage : 'url(navDot.png)' });
 		switch (frameNum) {
 		  case 1:
 		  	$('.dot5').css({ backgroundImage : 'url(navDot_active.png)' });
-
 			t.set(frame5, {left:'100%', opacity : 0});
 		  	t.to(frame1, 0.4, {left:'-100%', ease:Power3.easeOut});
 			t.to(frame5, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -99,9 +88,7 @@ function init() {
 		  	frameNum = 5;
 	  	  break;
 	  	  case 5:
-
 	  	  	$('.dot4').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame4, {left:'100%', opacity : 0});
 		  	t.to(frame5, 0.4, {left:'-100%', ease:Power3.easeOut});
 			t.to(frame4, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -110,7 +97,6 @@ function init() {
 	  	  break;
 	  	  case 4:
 	  	  	$('.dot3').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame3, {left:'100%', opacity : 0});
 		  	t.to(frame4, 0.4, {left:'-100%', ease:Power3.easeOut});
 			t.to(frame3, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -118,9 +104,7 @@ function init() {
 	  	  	frameNum = 3;
 	  	  break;
 	  	  case 3:
-
 	  	  	$('.dot2').css({ backgroundImage : 'url(navDot_active.png)' });
-
 	  	  	t.set(frame2, {left:'100%', opacity : 0});
 		  	t.to(frame3, 0.4, {left:'-100%', ease:Power3.easeOut});
 			t.to(frame2, 0.4, {left:0, opacity:1, ease:Power3.easeOut});
@@ -157,11 +141,7 @@ function init() {
 
 	$(window).resize( function(){
 		$('#main div').removeAttr('style');
-	})
-
-
-
-
+	});
 
 	var $width 			= window.innerWidth;
 	var $height 		= window.innerHeight;
@@ -171,8 +151,8 @@ function init() {
 	var $rowNum    		= Math.ceil($height / $squareSize);
 	var $squareWidth  	= $width / $columnNum;
 	var $squareHeight 	= $height / $rowNum;
-	//var $wDif 			= $width /  arg.imageWidth;
-	//var $hDif 			= $height / arg.imageHeight;
+	//var $wDif 		= $width /  arg.imageWidth;
+	//var $hDif 		= $height / arg.imageHeight;
 	//var $wOffset 		= (arg.imageWidth  - $width)  * $wDif;
 	//var $hOffset 		= (arg.imageHeight - $height) * $hDif;
 
@@ -185,7 +165,6 @@ function init() {
 
 			$(logos).css( { width : $squareWidth, height : $squareHeight, left : $squareWidth * i + 'px' , top : $squareHeight * j + 'px' } );
 
-			//$(logos).html(i);
 
 		}
 	}
@@ -201,7 +180,7 @@ function init() {
 			//$(el).html(i);
 			$(el).css( { backgroundColor : '#b09870'} );
 		} else {
-
+			$(el).css( { backgroundColor : '#0b2036'} );
 		}
 	});
 

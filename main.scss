@@ -107,7 +107,7 @@ img {
 
 #intro {
 	@include fullscreen;
-	display: none;
+	//display: none;
 }
 
 
@@ -149,7 +149,7 @@ img {
 	transform: translate(-50%);
 	width: 1503 / 2048 * 100%;
 	height: 213 / 810 * 100%;
-	//background-color: black;
+
 	@include portrait {
 		width: 80%;
 		height: 20%;
