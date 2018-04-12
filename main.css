@@ -80,6 +80,15 @@ img {
   transform: translate(0, -50%);
   width: 80px;
   height: 80px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media all and (orientation: portrait) {
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .arrow.left {
