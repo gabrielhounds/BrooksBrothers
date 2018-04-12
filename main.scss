@@ -150,6 +150,10 @@ img {
 	width: 1503 / 2048 * 100%;
 	height: 213 / 810 * 100%;
 	//background-color: black;
+	@include portrait {
+		width: 80%;
+		height: 20%;
+	}
 }
 
 .arrow {
@@ -180,6 +184,10 @@ img {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
+	@include portrait {
+		width: 50%;
+
+	}
 }
 
 .cta {
@@ -191,15 +199,35 @@ img {
 	background-position: center center;
 	background-repeat: no-repeat;
 
+	&:hover {
+		background-color: #8f7743;
+	}
+
+		@include portrait {
+			width: 400 / 1936 * 100%;
+			height: 89 / 2048 * 100%;
+			bottom: 3.0%
+		}
+
 	&.men {
 		left: 50%;
+
 		background-image: url(cta_txt_men.png);
+
+		@include portrait {
+			left: 45%;
+			transform: translate(-100%);
+		}
 
 	}
 
 	&.women {
 		left: 72%;
 		background-image: url(cta_txt_women.png);
+
+		@include portrait {
+			left: 55%;
+		}
 	}
 
 }
@@ -211,6 +239,12 @@ img {
 	left: 25%;
 	transform: translate(-50%);
 	display: flex;
+
+	@include portrait {
+		bottom: 10%;
+		left: 50%;
+		transform: translate(-50%);
+	}
 }
 
 .dot {
@@ -271,6 +305,20 @@ img {
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
+
+	@include portrait {
+		.imgLeft {
+			background-position: 80% center;
+		}
+
+		.imgRight {
+			background-position: right center;
+		}
+
+	}
+
+
+
 }
 
 .frame3 {
@@ -294,6 +342,11 @@ img {
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
+	@include portrait {
+		.imgLeft {
+			background-position: right center;
+		}
+	}
 }
 
 .frame4 {
@@ -316,6 +369,11 @@ img {
 		background-size: contain;
 		background-position: center center;
 		background-repeat: no-repeat;
+	}
+	@include portrait {
+		.imgLeft {
+			background-position: right center;
+		}
 	}
 }
 

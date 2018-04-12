@@ -69,6 +69,13 @@ img {
   height: 26.2963%;
 }
 
+@media all and (orientation: portrait) {
+  .frame .txt {
+    width: 80%;
+    height: 20%;
+  }
+}
+
 .arrow {
   top: 50%;
   transform: translate(0, -50%);
@@ -98,6 +105,12 @@ img {
   background-repeat: no-repeat;
 }
 
+@media all and (orientation: portrait) {
+  .logo.main {
+    width: 50%;
+  }
+}
+
 .cta {
   bottom: 4.0625%;
   width: 19.53125%;
@@ -108,14 +121,39 @@ img {
   background-repeat: no-repeat;
 }
 
+.cta:hover {
+  background-color: #8f7743;
+}
+
+@media all and (orientation: portrait) {
+  .cta {
+    width: 20.66116%;
+    height: 4.3457%;
+    bottom: 3.0%;
+  }
+}
+
 .cta.men {
   left: 50%;
   background-image: url(cta_txt_men.png);
 }
 
+@media all and (orientation: portrait) {
+  .cta.men {
+    left: 45%;
+    transform: translate(-100%);
+  }
+}
+
 .cta.women {
   left: 72%;
   background-image: url(cta_txt_women.png);
+}
+
+@media all and (orientation: portrait) {
+  .cta.women {
+    left: 55%;
+  }
 }
 
 .nav {
@@ -125,6 +163,14 @@ img {
   left: 25%;
   transform: translate(-50%);
   display: flex;
+}
+
+@media all and (orientation: portrait) {
+  .nav {
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .dot {
@@ -179,6 +225,15 @@ img {
   background-repeat: no-repeat;
 }
 
+@media all and (orientation: portrait) {
+  .frame2 .imgLeft {
+    background-position: 80% center;
+  }
+  .frame2 .imgRight {
+    background-position: right center;
+  }
+}
+
 .frame3 .imgLeft {
   background-image: url(img_3_1.jpg);
   background-size: cover;
@@ -200,6 +255,12 @@ img {
   background-repeat: no-repeat;
 }
 
+@media all and (orientation: portrait) {
+  .frame3 .imgLeft {
+    background-position: right center;
+  }
+}
+
 .frame4 .imgLeft {
   background-image: url(img_4_1.jpg);
   background-size: cover;
@@ -219,6 +280,12 @@ img {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media all and (orientation: portrait) {
+  .frame4 .imgLeft {
+    background-position: right center;
+  }
 }
 
 .frame5 .imgLeft {
