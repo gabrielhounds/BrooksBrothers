@@ -24,11 +24,24 @@ img {
   overflow: hidden;
 }
 
+#introLogo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 59.76562%;
+  height: 37.58333%;
+  background-image: url(BB_logo.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 #intro {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #0b2036;
 }
 
 #clickThrough {
@@ -36,6 +49,12 @@ img {
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
+}
+
+.logos {
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .frame {
@@ -135,8 +154,8 @@ img {
 
 @media all and (orientation: portrait) {
   .cta {
-    width: 20.66116%;
-    height: 4.3457%;
+    width: 30.99174%;
+    height: 4.88281%;
     bottom: 3.0%;
   }
 }
@@ -164,7 +183,7 @@ img {
   }
 }
 
-.nav {
+.breadcrumbs {
   width: 14.16016%;
   height: 2.83333%;
   bottom: 4.0625%;
@@ -174,8 +193,10 @@ img {
 }
 
 @media all and (orientation: portrait) {
-  .nav {
-    bottom: 10%;
+  .breadcrumbs {
+    width: 24.16667%;
+    height: 1.66016%;
+    bottom: 11%;
     left: 50%;
     transform: translate(-50%);
   }
